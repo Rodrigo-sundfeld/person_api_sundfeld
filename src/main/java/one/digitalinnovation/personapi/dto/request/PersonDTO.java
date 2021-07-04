@@ -15,7 +15,6 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class PersonDTO {
 
     private Long id;
@@ -32,6 +31,9 @@ public class PersonDTO {
     @CPF
     private String cpf;
 
+    private String rg;
+
+    @NotEmpty
     private String birthDate;
 
     @NotEmpty

@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class PersonNotFoundException extends Throwable {
 
     public PersonNotFoundException(Long id) {
-        super("Pessoa não encontrada pelo ID" + id);
+        super(String.format("Pessoa com o ID %s não encontrada!", id));
     }
 }

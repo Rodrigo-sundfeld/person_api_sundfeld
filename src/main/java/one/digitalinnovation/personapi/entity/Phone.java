@@ -13,7 +13,6 @@ import javax.persistence.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Phone {
 
     @Id
@@ -24,7 +23,6 @@ public class Phone {
     @Column(nullable = false)
     private PhoneType type;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String number;
-
 }
